@@ -86,7 +86,7 @@ createLinkElement = (key) =>  {
 
 addTodo = () => {
     var value = inputElement.value;
-    if (value == null || value == '') return;
+    if (!value) return;
     
     todos.push(value);
     inputElement.value = '';
